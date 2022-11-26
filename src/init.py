@@ -11,6 +11,9 @@ def inRange(x, min, max) -> bool:
 def average(numList: list) -> float:
     return sum(numList)/len(numList)
 
+def createOut():
+    os.makedirs(os.path.join(sys.path[0], "out"), 0o777, True)
+
 def getConfig():
     with open(os.path.join(sys.path[0], "config.json"), "r") as f:
         return json.load(f)
@@ -29,6 +32,7 @@ data: list = config["data"]
 outputName = outputNameArg or config["outputName"] or "FDT"
 numberOfClasses = numberOfClassesArg or config["numberOfClasses"] or 1
 
+createOut()
 data.sort()
 
 def getClassWidth() -> int:
