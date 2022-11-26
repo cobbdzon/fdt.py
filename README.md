@@ -1,5 +1,7 @@
 # fdt.py
- A "tool" written in [Python](https://www.python.org/downloads/) to generate Frequency Distribution Tables.
+A "tool" written in [Python](https://www.python.org/downloads/) to generate Frequency Distribution Tables in .xlsx file format.
+
+Made to make my life in Statistics class a little bit easier and just have an excuse to actually learn Python more.
 
 ## Dependencies
 - [XlsxWriter](https://github.com/jmcnamara/XlsxWriter)
@@ -15,9 +17,11 @@ In a terminal:
 ```
 py "C:\...\fdt.py\src\init.py" [OUTPUT_NAME] [NUMBER_OF_CLASSES]
 ```
-Replace the `...` to the directory of the fdt.py repository in your machine. 
+Replace the `...` to the directory of the fdt.py repository in your machine.
 
 If either `[OUTPUT_NAME]` or `[NUMBER_OF_CLASSES]` are specified, their default values in `config.json` will be used instead.
+
+You can find the outputted .xlsx files in the out folder inside src.
 
 ## Configuraton
 An example of a proper `config.json` is shown below
