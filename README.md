@@ -40,7 +40,47 @@ An example of a proper `config.json` is shown below
 }
 ```
 | Config | Type | Description |
-| -| - | - |
+| - | - | - |
 | outputName | string | The default file name of the .xlsx file that will be outputted by the script. |
 | numberOfClasses | number | The default number of classes in the Frequency Distribution Table. |
 | data | array\<number> | The data sample for the Frequency Distribution Table. |
+
+## Formulas
+The formulas used in the code and just for the author's reference.
+### Notation
+Notations from statistics class.
+| Variable | Name |
+| - | - |
+| $i$ | Class Width |
+| $ci$ | Class Interval |
+| $ci$ | Class Interval |
+| $x$ | Class Mark |
+| $cb$ | Class Boundary |
+| $f$ | Frequency |
+| $N$ | Total Frequency |
+| $R_f$ | Relative Frequency |
+| $cf$ | Cumulative Frequency |
+| $<cf$ | Less Than Cumulative Frequency |
+| $>cf$ | Greater Than Cumulative Frequency |
+
+### Additional Notation
+This is my own notation for certain unannotated values.
+| Variable | Name |
+| - | - |
+| $hv$ | Dataset Lowest Value |
+| $lv$ | Dataset Highest Value |
+| $dc$ | Desired Classes |
+| $ci_1$ | Class Interval Lower Limit |
+| $ci_2$ | Class Intervl Upper Limit |
+| $cb_1$ | Class Boundary Lower Limit |
+| $cb_2$ | Class Boundary Upper Limit |
+
+
+### Class Width
+$$ i=\frac{hv-lv}{dc} $$
+
+### Class Mark
+$$ x=\frac{ci_1 + ci_2}{2} $$
+
+### Relative Frequency
+$$ R_f=\frac{f}{N} $$
