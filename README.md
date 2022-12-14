@@ -1,5 +1,8 @@
 # fdt.py
-A "tool" written in [Python](https://www.python.org/downloads/) to generate Frequency Distribution Tables in .xlsx file format.
+
+[Changelog](CHANGELOG.md)
+
+A tool written in [Python](https://www.python.org/downloads/) to generate Frequency Distribution Tables in .xlsx file format.
 
 Made to make my life in Statistics class a little bit easier and just have an excuse to actually learn Python more.
 
@@ -13,7 +16,17 @@ git clone https://github.com/cobbdzon/fdt.py.git
 ```
 
 ## Usage
-In a terminal:
+Always remember to configure the dataset in `src\config.json` before outputting a file.
+
+### With run.bat
+Simply run the batch file `src\run.bat` and type in the parameters. 
+
+After inputting the parameters the program will automatically open the directory and have the .xlsx file selected for you. You can edit the code to remove the auto-open if you don't like having a new window pop up every time you generate a file.
+
+The output name should always be a valid file name and the number of classes be a valid number at all times or else the program will not output anything.
+
+### With a Terminal
+The old and original way
 ```
 py "C:\...\fdt.py\src\init.py" [OUTPUT_NAME] [NUMBER_OF_CLASSES]
 ```
@@ -24,7 +37,7 @@ If either `[OUTPUT_NAME]` or `[NUMBER_OF_CLASSES]` are specified, their default 
 You can find the outputted .xlsx files in the out folder inside src.
 
 ## Configuraton
-An example of a proper `config.json` is shown below
+An example of a proper `config.json` from `src\templates` is shown below
 ```json
 {
     "outputName": "FDT",
@@ -60,8 +73,8 @@ Notations from statistics class.
 | $N$ | Total Frequency |
 | $R_f$ | Relative Frequency |
 | $cf$ | Cumulative Frequency |
-| $<cf$ | Less Than Cumulative Frequency |
-| $>cf$ | Greater Than Cumulative Frequency |
+| $\lt cf$ | Less Than Cumulative Frequency |
+| $\gt cf$ | Greater Than Cumulative Frequency |
 
 ### Additional Notation
 This is my own notation for certain unannotated values.
