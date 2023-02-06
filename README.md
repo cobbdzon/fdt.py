@@ -8,6 +8,11 @@ Made to make my life in Statistics class a little bit easier and just have an ex
 
 ## Dependencies
 - [XlsxWriter](https://github.com/jmcnamara/XlsxWriter)
+### Installing Dependencies
+In a terminal of your choice, run:
+```
+pip install -r requirements.txt
+```
 
 ## Installation
 ### with Git
